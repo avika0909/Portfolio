@@ -13,7 +13,6 @@
     <div id="header">
         <div class="container">
             <nav>
-                <!-- Name in upper-left corner instead of image logo -->
                 <a href="#header" class="logo-text">Avika<span>.</span></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -32,7 +31,6 @@
                 <h1><span>Avika</span> Sachan.</h1>
                 <p class="intro-tag" style="margin-top: 5px; color: #ccd6f6;">Software Development Intern & Full-Stack Developer</p>
                 
-                <!-- About summary directly in the primary hero section -->
                 <p class="hero-about">
                     I'm a Master of Computer Applications (MCA) student at NIT Trichy with hands-on internship experience at SAP Labs. I specialize in backend development with Java and Spring Boot, building scalable microservices, React frontends, and intelligent Agentic AI solutions.
                 </p>
@@ -173,24 +171,29 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="subTitle">Contact Me</h1>
+                    <h1 class="subTitle">Let's Connect</h1>
+                    <p>I am always open to discussing new software development opportunities, full-stack projects, or collaboration on AI solutions.</p>
                     <p><i class="fas fa-paper-plane"></i> avikasachan0909@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i> +91-8009500818</p>
+                    <p><i class="fas fa-map-marker-alt"></i> NIT Tiruchirappalli, Tamil Nadu, India</p>
+                    
                     <div class="social-icon">
                         <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/avika-sachan-8a3532318/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://x.com/sachan_avika" target="_blank"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.instagram.com/avika0923/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <a href="images/avika Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/avika Resume.pdf" download class="btn btn2" style="margin-top: 25px;">Download CV</a>
                 </div>
+                
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Send Message</button>
-                    </form>
+                    <div class="direct-contact-card">
+                        <h2>Quick Reach</h2>
+                        <p>Feel free to reach out directly via email or phone. I'll get back to you as soon as possible!</p>
+                        <a href="mailto:avikasachan0909@gmail.com" class="btn btn2 direct-btn">
+                            <i class="fas fa-envelope"></i> Send an Email
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,23 +225,6 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
-
-        const scriptURL = "https://script.google.com/macros/s/AKfycbza1xwFctqXX2tQlTmX702cmXOoJjzZ80ciy3GIft6oqPmTs36K1dFhF8HneUt5a5T6/exec";
-        const form = document.forms['submit-to-google-sheet'];
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => response.text())
-                .then(data => {
-                    alert("Form submitted successfully!");
-                    form.reset();
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    alert("Submission failed. Please try again.");
-                });
-        });
     </script>
 </body>
 </html>
