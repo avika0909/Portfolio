@@ -3,179 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Avika Sachan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo1.png" class="logo">
+                <img src="images/logo1.png" class="logo" alt="Logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#services">Services</a></li>
-                    <li> <a href="#portfolio">Portfolio</a></li>
-                    <li> <a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience-section">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headerText">
-                <p> Web Developer</p>
-                <h1>Hi,I am <span>Avika</span> Sachan <br> from Kanpur</h1>
+                <p>Software Development Intern & Full-Stack Developer</p>
+                <h1>Hi, I am <span>Avika</span> Sachan</h1>
             </div>
         </div>
     </div>
-    <!-- about -->
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col1">
-                    <img src="images/img3.png">
+                    <img src="images/img3.png" alt="Avika Sachan">
                 </div>
                 <div class="col2">
                     <h1 class="subTitle">About Me</h1>
-                    <p>Hello! I'm Avika, a first-year Master of Computer Applications (MCA) student at the National Institute of Technology, Tiruchirappalli (NIT Trichy). My journey in the MCA program has equipped me with a diverse set of technical and interpersonal skills, complemented by habits that foster both personal and professional growth.</p>
+                    <p>Hello! I'm Avika, a Master of Computer Applications (MCA) student at the National Institute of Technology, Tiruchirappalli (NIT Trichy) with internship experience at SAP Labs. I specialize in backend development with Java and Spring Boot, modern microservices, React, and Agentic AI solutions.</p>
+                    
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI?UX</span> <br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span> <br>Web App Development</li>
-                            <li><span>App Development</span> <br>Building Android/iOS apps</li>
+                            <li><span>Languages:</span> Java, Python, C++, SQL (MySQL), JavaScript</li>
+                            <li><span>Backend & Microservices:</span> Spring Boot, Node.js, REST APIs</li>
+                            <li><span>Frontend & Database:</span> React.js, HTML, CSS, MySQL, MongoDB</li>
+                            <li><span>AI/ML & DevOps:</span> Generative AI, Agentic AI, LLMs, LangChain, Docker, Kubernetes, Jenkins, ArgoCD, AWS</li>
+                            <li><span>Core CS:</span> DSA, OOP, DBMS, Operating Systems</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li><span>2025- Current</span> <br>UI/UX Design Training at Nit trichy</li>
-                            <li><span>2023- Workshop</span> <br>Web Dev Workshop </li>
-                            <li><span>2025</span> <br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
+
                     <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>2025</span> <br>UI/UX Design Training at Nit trichy</li>
-                            <li><span>2027</span> <br>MCA AT NITT</li>
-                            <li><span>2024</span> <br>BCA at VSICS</li>
+                            <li><span>Aug 2024 - Present</span><br><strong>Master of Computer Applications (MCA)</strong><br>National Institute of Technology, Tiruchirappalli (CGPA: 8.36)<br><em>Secured AIR 129 in NIMCET Entrance Exam</em></li>
+                            <li><span>Aug 2021 - May 2024</span><br><strong>Bachelor of Computer Applications (BCA)</strong><br>Dr. Virendra Swarup Institute of Computer Studies, CSJMU (CGPA: 8.74)</li>
+                            <li><span>Aug 2020 - May 2021</span><br><strong>Intermediate</strong><br>Sardar Patel Academy Inter College (87.5%)</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- ----------services--------- -->
-     <div id="services">
+
+    <!-- Work Experience Section -->
+    <div id="experience-section">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="subTitle">Work Experience</h1>
+            <div class="experience-list">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Software Development Intern <span class="company">@ SAP Labs Pvt. Ltd.</span></h3>
+                        <span class="duration">May 2026 – Jul 2026 | Bengaluru, India</span>
+                    </div>
+                    <ul>
+                        <li>Automated the ENGCAND deployment workflow using Java, reducing manual image updates and deployment effort.</li>
+                        <li>Worked with Jenkins, ArgoCD, GitHub, and Kubernetes to automate enterprise CI/CD build and deployment pipelines.</li>
+                        <li>Developed an Agentic AI solution using LangChain, LangGraph, Claude, Streamlit, and SQLite for Jenkins log analysis and intelligent root cause identification.</li>
+                        <li>Used Splunk to monitor application logs, investigate production issues, and support bug resolution.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subTitle">What I Do</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-
-                    <h2>Web Design</h2>
-                    <p>I've good knowledge about web Development and also know about some more new technology</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend & Microservices</h2>
+                    <p>Designing scalable RESTful APIs, distributed microservices, and database systems using Java, Spring Boot, Node.js, and MySQL/MongoDB.</p>
                 </div>
                 <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I've good knowledge about web Development and also know about some more new technology</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>DevOps & Cloud</h2>
+                    <p>Automating deployment pipelines and hosting applications using Docker, Kubernetes, Jenkins, ArgoCD, and AWS (EC2, S3, IAM).</p>
                 </div>
                 <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>AI ML designer </h2>
-                    <p>I also have some good knowledge about AI ML model and good commamd in AIML</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Agentic AI & ML</h2>
+                    <p>Creating intelligent workflow automations using LLMs, LangChain, LangGraph, Prompt Engineering, and Machine Learning models.</p>
                 </div>
             </div>
         </div>
-     </div>
-    <!-- ----------portfolio------- -->
-     <div id="portfolio">
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="subTitle">Featured Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work1.jpg">
+                    <img src="images/work1.jpg" alt="Microservices E-commerce">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connect you to the talented people around the world
-                            download it from play Store.
-                        </p>
+                        <h3>Microservices E-commerce</h3>
+                        <p>Spring Boot microservices with Spring Eureka, API Gateway, React, and MySQL databases.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work1.jpg">
+                    <img src="images/work1.jpg" alt="Login-Signup Portfolio">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app help you freshing your mind it gives you vibes. you can listen 
-                            the songs and enjoy it.
-                        </p>
+                        <h3>Login & Portfolio App</h3>
+                        <p>Full-stack Node.js & MongoDB application deployed on AWS EC2 and hosted on S3.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work1.jpg">
+                    <img src="images/work1.jpg" alt="Adaptive Learning System">
                     <div class="layer">
-                        <h3>Hotel Management App</h3>
-                        <p>The app helps us to Manage the hotel restaurant's various services.
-                        </p>
+                        <h3>Adaptive Learning System</h3>
+                        <p>Machine learning platform utilizing Decision Trees, ANNs, and LLMs for personalized learning.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com" target="_blank" class="btn">View More on GitHub</a>
         </div>
+    </div>
 
-     </div>
-     <!-- ------contact------ -->
-
-     <div id="contact">
+    <!-- Contact Section -->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
+                    <h1 class="subTitle">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i> avikasachan0909@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 8009500818</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-8009500818</p>
                     <div class="social-icon">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href="https://x.com/sachan_avika"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/avika0923/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/avika-sachan-8a3532318/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/avika-sachan-8a3532318/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/sachan_avika" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/avika0923/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <a href="images/avika Resume.pdf" download class="btn btn2">download CV</a>
+                    <a href="images/avika Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your msg"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
 
-         <div class="copyright">
-            <p>copyright Avika. made with <i class="fas fa-heart"></i> by me</p>
-
-         </div>
-     </div>
+        <div class="copyright">
+            <p>Copyright © Avika Sachan. Built with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
 
     <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(tabname){
             for(tablink of tablinks){
@@ -188,36 +196,30 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-    </script>
-
-    <script>
-        var sidemenu=document.getElementById("sidemenu");
+        var sidemenu = document.getElementById("sidemenu");
         function openmenu(){
-            sidemenu.style.right="0";
+            sidemenu.style.right = "0";
         }
         function closemenu(){
-            sidemenu.style.right="-200px";
+            sidemenu.style.right = "-200px";
         }
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbza1xwFctqXX2tQlTmX702cmXOoJjzZ80ciy3GIft6oqPmTs36K1dFhF8HneUt5a5T6/exec";
+        const form = document.forms['submit-to-google-sheet'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => response.text())
+                .then(data => {
+                    alert("Form submitted successfully!");
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert("Submission failed. Please try again.");
+                });
+        });
     </script>
-
-<script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbza1xwFctqXX2tQlTmX702cmXOoJjzZ80ciy3GIft6oqPmTs36K1dFhF8HneUt5a5T6/exec";
-    const form = document.forms['submit-to-google-sheet'];
-
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => response.text()) // Convert response to text
-            .then(data => {
-                alert("Form submitted successfully!"); // Success message
-                form.reset(); // Clear form after submission
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                alert("Submission failed. Please try again.");
-            });
-    });
-</script>
-
 </body>
 </html>
