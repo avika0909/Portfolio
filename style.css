@@ -522,3 +522,77 @@ nav .fas {
         margin-bottom: 25px;
     }
 }
+/* Logo Text Styling */
+.logo-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #e6f1ff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: #64ffda;
+}
+
+/* Updated Header Layout */
+#header {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 60px;
+    background-image: url('images/img1.png');
+    background-size: 40% auto; /* Scaled down the hero image */
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.headerText {
+    margin-top: 10%;
+    max-width: 600px; /* Restricts width so text doesn't overlap the right image */
+    font-size: 20px;
+    color: #ccd6f6;
+}
+
+.headerText p.intro-tag {
+    color: #64ffda;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.headerText h1 {
+    font-size: 52px;
+    margin-top: 10px;
+    color: #e6f1ff;
+    line-height: 1.2;
+}
+
+.headerText p.hero-about {
+    font-size: 16px;
+    color: #8892b0;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.hero-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hero-btn-group .btn {
+    margin: 0; /* Reset automatic margins */
+}
+
+/* Adjustments for Mobile Screens */
+@media only screen and (max-width: 900px) {
+    #header {
+        background-image: none; /* Hide background image on small screens to prevent overlap */
+    }
+    .headerText {
+        max-width: 100%;
+        margin-top: 25%;
+    }
+}
